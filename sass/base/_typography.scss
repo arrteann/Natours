@@ -1,0 +1,55 @@
+
+body {
+    font-family: "Lato";
+    font-weight: 400;
+    color: $color-gray-dark;
+    padding: 3rem;
+    line-height: 1.7;
+}
+.head-title {
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    color: $color-white;
+    text-transform: uppercase;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation: Moveinleft 1s ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: Moveinright 1s ease-out;
+    }
+}
+.heading-secondary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    display: inline-block;
+    color:transparent;
+    transition: all .2s;
+    &:hover{
+        transform: skewX(15deg) skewY(2deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-back,.2);
+    }
+}
+.heading-tertiary{
+    font-size: $defualt-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: $defualt-font-size;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
